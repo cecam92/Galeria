@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import { Kami } from "../assets/kami.png";
-import { userIcon } from "../assets/user-icon.png";
+import  Kami  from "../assets/kami.png";
+import  userIcon  from "../assets/user-icon.png";
 
 import "./styles/Header.css";
 
