@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/logo.jsx";
 import LogoG from "../assets/logoG.jsx";
 import SearchBar from "./SearchBar.jsx";
+import LoginModal from "./LoginModal.jsx";
 import { Cart3, Person, Search, List } from "react-bootstrap-icons";
 import "./styles/Header.css";
 
 const Header = () => {
   const [showBar, setShowBar] = useState(false);
+
+  const [showLogin, setShowLogin] = useState(false);
 
   return (
     <Fragment>
@@ -25,7 +28,14 @@ const Header = () => {
               </div>
               <div className="header__menu-user col-3">
                 <i>
-                  <Person className="header__image-user" />
+                  <Person
+                    className="header__image-user"
+                    onClick={() => setShowLogin(true)}
+                  />
+                  <LoginModal
+                    show={showLogin}
+                    onHide={() => setShowLogin(false)}
+                  />
                 </i>
                 <i className="header__icon-cart">
                   <Cart3 className="header__image-cart" />
@@ -46,7 +56,14 @@ const Header = () => {
                   />
                 </i>
                 <i>
-                  <Person className="header__image-user" />
+                  <Person
+                    className="header__image-user"
+                    onClick={() => setShowLogin(true)}
+                  />
+                   <LoginModal
+                    show={showLogin}
+                    onHide={() => setShowLogin(false)}
+                  />
                 </i>
                 <i className="header__icon-cart">
                   <Cart3 className="header__image-cart" />
@@ -55,13 +72,13 @@ const Header = () => {
             </>
           )}
         </div>
-        {showBar && 
-        <div className="row">
-          <div className="col">
-          <SearchBar className="header__search-bar"/>
+        {showBar && (
+          <div className="row">
+            <div className="col">
+              <SearchBar className="header__search-bar" />
+            </div>
           </div>
-          </div>
-          }
+        )}
       </header>
     </Fragment>
   );
