@@ -1,35 +1,69 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import  Kami  from "../assets/kami.png";
-import  userIcon  from "../assets/user-icon.png";
-
+import Logo from "../assets/logo.jsx";
+import LogoG from "../assets/logoG.jsx";
+import SearchBar from "./SearchBar.jsx";
+import { Cart3, Person, Search, List } from "react-bootstrap-icons";
 import "./styles/Header.css";
 
-function Header() {
+const Header = () => {
+  const [showBar, setShowBar] = useState(false);
+
   return (
     <Fragment>
-      <header className="header">
-        <Link to="/">
-          <img className="header__image-logo" src={Kami} alt="logo" />
-        </Link>
-        <div>
-          <input
-            className="header-searchBar"
-            type="text"
-            placeholder="Search..."
-          />
+      <header className="header container-fluid">
+        <div className="row">
+          {window.innerWidth > 650 ? (
+            <>
+              <div className="header-logo col-2">
+                <Link to="/">
+                  <Logo className="header__image-logo" />
+                </Link>
+              </div>
+              <div className="col-7">
+                <SearchBar />
+              </div>
+              <div className="header__menu-user col-3">
+                <i>
+                  <Person className="header__image-user" />
+                </i>
+                <i className="header__icon-cart">
+                  <Cart3 className="header__image-cart" />
+                </i>
+              </div>
+            </>
+          ) : (
+            <>
+              <Link to="/">
+                <LogoG className="header__image-logo" />
+              </Link>
+              <div className="header__menu-user col-5">
+                <List className="header__image-list" />
+                <i>
+                  <Search
+                    className="header__image-search"
+                    onClick={() => setShowBar(!showBar)}
+                  />
+                </i>
+                <i>
+                  <Person className="header__image-user" />
+                </i>
+                <i className="header__icon-cart">
+                  <Cart3 className="header__image-cart" />
+                </i>
+              </div>
+            </>
+          )}
         </div>
-        <div className="header__menu-user">
-          <img
-            className="header___image-cart"
-            src="../assets/images/kami.png"
-            alt="cart"
-          />
-          <img className="header__image-user" src={userIcon} alt="userIcon" />
-        </div>
+        {showBar && 
+        <div className="row">
+          <div className="col">
+          <SearchBar className="header__search-bar"/>
+          </div>
+          </div>
+          }
       </header>
     </Fragment>
   );
-}
-
+};
 export default Header;
