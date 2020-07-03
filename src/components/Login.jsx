@@ -1,45 +1,65 @@
-import React from 'react';
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Form from "react-bootstrap/Form";
 
-export default function Login(){
+import { Eye } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 
-  return(
-    <form>
-    <div className="form-group">
-      <label for="inputEmail">Email</label>
-      <input
-        className="form-control"
-        id="inputEmail"
-        placeholder="galeriau@gmail.com"
-      />
-    </div>
-    <div className="form-group">
-      <label htmlfor="inputPassword">Password</label>
+import "./styles/Login.scss";
+export default function Login() {
+  const [typeInput, setTypeInput] = useState("true");
 
-      <input className="form-control" id="inputPassword" type="password" />
-    </div>
+  const showPassword = () => {
+    setTypeInput(typeInput ? false : true);
+  };
 
-    <div className="modalBody__rememberMe form-group">
-      <div className="row">
-        <div className="modalBody__rememberMe-checkbox col-4">
-          <label className="customcheck ">
-            Remember me
-            <input type="checkbox" />
-            <span className="checkmark"></span>
-          </label>
-        </div>
+  return (
+    <>
+      <Form>
+        <Form.Group controlId="formBasicEmail">
+          <Form.Label>Email address</Form.Label>
+          <Form.Control type="email" placeholder="Enter email" />
+          <Form.Text className="text-muted">
+            We'll never share your email with anyone else.
+          </Form.Text>
+        </Form.Group>
 
-        <div className="modalBody__rememberMe-forgotPassword col-8">
-          <Link to="/">
-            <label className="forgotPassword cursor__pointer">
-              Forgot Password?
-            </label>
-          </Link>
-        </div>
-      </div>
-    </div>
-    <Button className='form-group btn btn-primary btn-block btn-shadow' id="signIn-button" type="submit">Sign in</Button>
-    {/* <Button className='form-group btn btn-primary btn-block btn-shadow' type="submit" onClick={props.onHide}>Sign in</Button> */}
-
-    </form>
-  )
+        <Form.Group controlId="formBasicPassword">
+          <Form.Label>Password</Form.Label>
+          <div className="input-group">
+            <Form.Control
+              className="border-right-0  password-input"
+              type={typeInput ? "password" : "text"}
+              placeholder="Password"
+            />
+            <div className="input-group-append">
+              <div
+                className="form-control input-group-text bg-transparent  password-icon"
+                onClick={showPassword}
+              >
+                <Eye />
+              </div>
+            </div>
+          </div>
+        </Form.Group>
+        <Form.Group controlId="formBasicCheckbox" className="row">
+          <div className="form-group col-6">
+            <Form.Check type="checkbox" label="Remember me" />
+          </div>
+          <div className="col-6 text-right pb-2">
+            <Form.Label>
+              <Link to="/">Forgot Password</Link>{" "}
+            </Form.Label>
+          </div>
+        </Form.Group>
+        <Button
+          variant="primary"
+          type="submit"
+          className="btn btn-primary btn-block"
+        >
+          Submit
+        </Button>
+      </Form>
+    </>
+  );
 }
