@@ -1,0 +1,12 @@
+// Override default variables before the import
+$primary: #fe696a;
+$primaryOp :unquote($primary+ "4d" );
+// Import Bootstrap and its default variables
+@import "~bootstrap/scss/bootstrap.scss";
+.form-control {
+  &:focus {
+    border-color: $primaryOp ;
+    box-shadow: 0 0 0 0 transparent,
+      0 0.375rem 0.625rem -0.3125rem $primaryOp;
+  }
+}

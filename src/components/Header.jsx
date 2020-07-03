@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Logo from "../assets/logo.jsx";
 import LogoG from "../assets/logoG.jsx";
 import SearchBar from "./SearchBar.jsx";
-import LoginModal from "./LoginModal.jsx";
+import Modal from "./Modal.jsx";
 import { Cart3, Person, Search, List } from "react-bootstrap-icons";
 import "./styles/Header.css";
 
@@ -32,7 +32,7 @@ const Header = () => {
                     className="header__image-user"
                     onClick={() => setShowLogin(true)}
                   />
-                  <LoginModal
+                  <Modal
                     show={showLogin}
                     onHide={() => setShowLogin(false)}
                   />
@@ -60,7 +60,7 @@ const Header = () => {
                     className="header__image-user"
                     onClick={() => setShowLogin(true)}
                   />
-                   <LoginModal
+                   <Modal
                     show={showLogin}
                     onHide={() => setShowLogin(false)}
                   />
