@@ -28,13 +28,13 @@ export default function Login() {
           <Form.Label>Password</Form.Label>
           <div className="input-group">
             <Form.Control
-              className="border-right-0  password-input"
+              className="password-input"
               type={typeInput ? "password" : "text"}
               placeholder="Password"
             />
             <div className="input-group-append">
               <div
-                className="form-control input-group-text bg-transparent  password-icon"
+                className="input-group-text password-icon"
                 onClick={showPassword}
               >
                 <Eye />

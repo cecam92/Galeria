@@ -39,3 +39,20 @@ a {
     outline: none;
   }
 }
+.search-icon {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+.input-group-text {
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+.password-icon {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}

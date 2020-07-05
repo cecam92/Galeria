@@ -29,13 +29,13 @@ export default function SignUp() {
         <Form.Label>Password</Form.Label>
         <div className="input-group">
           <Form.Control
-            className="border-right-0  password-input"
+            className="password-input"
             type={typeInput1 ? "password" : "text"}
             placeholder="Password"
           />
           <div className="input-group-append">
             <div
-              className="form-control input-group-text bg-transparent  password-icon"
+              className="input-group-text password-icon"
               onClick={showPassword1}
             >
               <Eye />
@@ -47,13 +47,13 @@ export default function SignUp() {
         <Form.Label>Confirm Password</Form.Label>
         <div className="input-group">
           <Form.Control
-            className="border-right-0  password-input"
+            className="password-input"
             type={typeInput2 ? "password" : "text"}
-            placeholder="Confirm password"
+            placeholder="Confirm Password"
           />
           <div className="input-group-append">
             <div
-              className="form-control input-group-text bg-transparent  password-icon"
+              className="input-group-text password-icon"
               onClick={showPassword2}
             >
               <Eye />

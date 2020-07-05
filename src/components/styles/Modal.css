@@ -20,12 +20,6 @@
   display: flex;
 }
 
-/* .modalHeader__signIn {
-  border-bottom: 1px solid #fe696a;
-  color: #fe696a;
-  padding-bottom: 12px;
-} */
-
 .modalHeader__lockIcon {
   margin-bottom: 5px;
 }
@@ -33,7 +27,3 @@
 .modalHeader__personIcon {
   margin-bottom: 5px;
 }
-
-/* .modalHeader__signUp {
-  padding-bottom: 12px;
-} */
