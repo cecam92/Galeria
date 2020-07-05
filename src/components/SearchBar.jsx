@@ -8,9 +8,10 @@ const SearchBar = () => {
         <Search />
       </span>
       <input
-        class="form-control pl-5"
+        class="form-control"
         type="text"
         placeholder="Search for products"
+        style={{ paddingLeft: "30px" }}
       ></input>
     </Fragment>
   );
