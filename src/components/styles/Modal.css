@@ -20,11 +20,12 @@
   display: flex;
 }
 
-.modalHeader__signIn {
+/* .modalHeader__signIn {
   border-bottom: 1px solid #fe696a;
   color: #fe696a;
   padding-bottom: 12px;
-}
+} */
+
 .modalHeader__lockIcon {
   margin-bottom: 5px;
 }
@@ -33,14 +34,6 @@
   margin-bottom: 5px;
 }
 
-.modalHeader__signUp {
+/* .modalHeader__signUp {
   padding-bottom: 12px;
-}
-.modalHeader__signUp:hover {
-  color: #fe696a;
-}
-
-.cursor__pointer:hover {
-  cursor: pointer;
-  color: #fe696a;
-}
+} */

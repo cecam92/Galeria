@@ -4,9 +4,13 @@ const SearchBar = () => {
   return (
     <Fragment>
       <div className="input-group">
-        <input className="form-control rounded-pill search-input" type="search" placeholder="Search..." aria-label="Search"/> 
-  </div>
-       
+        <input
+          className="form-control  search-input"
+          type="search"
+          placeholder="Search for products"
+          aria-label="Search"
+        />
+      </div>
     </Fragment>
   );
 };
