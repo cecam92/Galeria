@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
-import "./styles/SearchBar.css";
 import { Search } from "react-bootstrap-icons";
+
 const SearchBar = () => {
   return (
     <Fragment>

@@ -5,7 +5,6 @@ import Form from "react-bootstrap/Form";
 import { Eye } from "react-bootstrap-icons";
 import { Link } from "react-router-dom";
 
-import "./styles/Login.scss";
 export default function Login() {
   const [typeInput, setTypeInput] = useState("true");
 
@@ -48,7 +47,9 @@ export default function Login() {
           </div>
           <div className="col-6 text-right pb-2">
             <Form.Label>
-              <Link to="/">Forgot Password</Link>{" "}
+              <Link className="link" to="/">
+                Forgot Password
+              </Link>
             </Form.Label>
           </div>
         </Form.Group>

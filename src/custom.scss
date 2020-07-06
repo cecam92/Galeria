@@ -1,11 +1,13 @@
 // Override default variables before the import
 
 $primary: #fe696a;
+$iconColor: #4a576a;
 $primaryOp: unquote($primary + "4d");
 
 // Import Bootstrap and its default variables
 
 @import "~bootstrap/scss/bootstrap.scss";
+
 .form-control {
   &:focus {
     border-color: $primaryOp;
@@ -17,16 +19,22 @@ $primaryOp: unquote($primary + "4d");
   &:focus {
     outline-color: $primary;
   }
-  //doesn't work
-  &:checked {
-    color: $primary;
-  }
 }
 a {
+  color: $iconColor;
   &:hover {
+    cursor: pointer;
     text-decoration: none;
+    color: $iconColor;
   }
 }
+.link {
+  color: $primary;
+  &:hover {
+    color: red;
+  }
+}
+
 .password-icon,
 .cursor__pointer {
   &:hover {
@@ -34,6 +42,7 @@ a {
     color: red;
   }
 }
+
 .close {
   &:focus {
     outline: none;
