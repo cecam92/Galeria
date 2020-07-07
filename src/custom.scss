@@ -1,0 +1,115 @@
+// Override default variables before the import
+
+$primary: #fe696a;
+$secondary: #373f50;
+$backgraundColor: #f2f5f9;
+
+$primaryOp: unquote($primary + "4d");
+
+// Import Bootstrap and its default variables
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+.form-control {
+  &:focus {
+    border-color: $primaryOp;
+    box-shadow: 0 0 0 0 transparent, 0 0.375rem 0.625rem -0.3125rem $primaryOp;
+  }
+}
+
+header {
+  background-color: white;
+}
+
+.form-check-input {
+  &:focus {
+    outline-color: $primary;
+  }
+}
+a {
+  color: $secondary;
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: $secondary;
+  }
+}
+.link {
+  color: $primary;
+  &:hover {
+    color: red;
+  }
+}
+
+.password-icon,
+.cursor__pointer {
+  &:hover {
+    cursor: pointer;
+    color: red;
+  }
+}
+
+.close {
+  &:focus {
+    outline: none;
+  }
+}
+.search-icon {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+}
+
+.input-group-text {
+  background: transparent;
+  border: none;
+  padding: 10px;
+}
+.password-icon {
+  z-index: 3;
+  position: absolute;
+  top: 0;
+  right: 2px;
+}
+main,
+.breadcrumb {
+  background-color: $backgraundColor;
+  padding: 10px 10px;
+}
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  color: $secondary;
+}
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: $secondary;
+}
+.cityImage {
+  width: 50px;
+  height: 50px;
+}
+
+.btn-light {
+  background-color: white;
+  box-shadow: 0 0 0 0 transparent, 0 0.375rem 0.625rem -0.3125rem $secondary;
+  &:hover {
+    background-color: white;
+    box-shadow: none;
+    border: white;
+  }
+  .truck-icon {
+    padding-bottom: 2px;
+    padding-right: 2px;
+  }
+}
+.breadcrumb-item a {
+  color: $secondary;
+  &:hover {
+    color: none;
+  }
+}
+.onPage a {
+  color: unquote($secondary + "8d");
+}

@@ -1,12 +1,18 @@
 import React, { Fragment } from "react";
-import "./styles/SearchBar.css";
+import { Search } from "react-bootstrap-icons";
+
 const SearchBar = () => {
   return (
     <Fragment>
-      <div className="input-group">
-        <input className="form-control rounded-pill search-input" type="search" placeholder="Search..." aria-label="Search"/> 
-  </div>
-       
+      <span class="input-group-text search-icon">
+        <Search />
+      </span>
+      <input
+        class="form-control"
+        type="text"
+        placeholder="Search for products"
+        style={{ paddingLeft: "30px" }}
+      ></input>
     </Fragment>
   );
 };
