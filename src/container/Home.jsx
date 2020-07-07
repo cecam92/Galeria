@@ -1,10 +1,12 @@
 import React, { Fragment } from "react";
-import Header from "../components/Header";
+import Layout from "../components/Layout";
+import Coupon from "../components/Coupon";
 function Home() {
   return (
     <Fragment>
-      <Header />
-      <div className="container py-4"></div>
+      <Layout>
+        <Coupon />
+      </Layout>
     </Fragment>
   );
 }

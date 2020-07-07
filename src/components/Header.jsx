@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <Fragment>
-      <header className="header container-fluid">
+      <header className="header container-fluid sticky-top">
         <div className="row">
           {window.innerWidth > 650 ? (
             <>

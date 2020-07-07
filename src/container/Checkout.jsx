@@ -1,10 +1,15 @@
 import React, { Fragment } from "react";
-import Header from "../components/Header";
+import Layout from "../components/Layout";
+import CheckoutDetails from "../components/CheckoutDetails";
 
 function Checkout() {
   return (
     <Fragment>
-      <Header />
+      <Layout>
+        <main>
+          <CheckoutDetails />
+        </main>
+      </Layout>
     </Fragment>
   );
 }
