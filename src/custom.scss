@@ -10,6 +10,13 @@ $primaryOp: unquote($primary + "4d");
 
 @import "~bootstrap/scss/bootstrap.scss";
 
+// Delete  +/- arrows from input type number.
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .form-control {
   &:focus {
     border-color: $primaryOp;

@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import Layout from "../components/Layout";
-import Order from "../components/Order";
+import Payment from "../components/Payment";
 function Home() {
   return (
     <Fragment>
       <Layout>
-        <Order />
+        <Payment />
       </Layout>
     </Fragment>
   );

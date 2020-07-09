@@ -10,7 +10,7 @@ function ItemInOrder() {
             src={Kami}
             className="item-image"
             style={{ width: "50px", height: "50px", paddingTop: "0px" }}
-            alt="item image"
+            alt="item"
           />
           <div className="cityDescription media-body pl-3">
             <h5>ProductName</h5>
