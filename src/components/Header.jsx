@@ -27,18 +27,14 @@ const Header = () => {
                 <SearchBar />
               </div>
               <div className="header__menu-user col-3">
-                <Link>
-                  <i>
-                    <Person
-                      className="header__image-user"
-                      onClick={() => setShowLogin(true)}
-                    />
-                    <Modal
-                      show={showLogin}
-                      onHide={() => setShowLogin(false)}
-                    />
-                  </i>
-                </Link>
+                <i style={{ cursor: "pointer" }}>
+                  <Person
+                    className="header__image-user"
+                    onClick={() => setShowLogin(true)}
+                  />
+                  <Modal show={showLogin} onHide={() => setShowLogin(false)} />
+                </i>
+
                 <Link to="../checkout">
                   <i className="header__icon-cart">
                     <Cart3 className="header__image-cart" />

@@ -43,7 +43,7 @@ export default function Login() {
         </Form.Group>
         <Form.Group controlId="formBasicCheckbox" className="row">
           <div className="form-group col-6">
-            <Form.Check type="checkbox" label="Remember me" />
+            <Form.Check type="radio" label="Remember me" />
           </div>
           <div className="col-6 text-right pb-2">
             <Form.Label>
