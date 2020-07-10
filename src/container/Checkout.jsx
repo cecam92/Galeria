@@ -11,7 +11,7 @@ function Checkout() {
     <Fragment>
       <Layout>
         <nav aria-label="breadcrumb">
-          <ol className="breadcrumb mb-0">
+          <ol className="breadcrumb mb-0 p-4">
             <li className="breadcrumb-item">
               <Link className="" to="/">
                 <House style={{ paddingBottom: "2px" }} /> Home
