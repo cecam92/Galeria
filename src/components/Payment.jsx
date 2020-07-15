@@ -15,7 +15,10 @@ function Payment() {
               type="radio"
               className="container-fluid p-4"
               label="Credit card"
-              onClick={() => (setOpenCC(!openCC), setOpenCash(false))}
+              onClick={() => {
+                setOpenCC(!openCC);
+                setOpenCash(false);
+              }}
               checked={openCC}
             />
           </div>
@@ -46,7 +49,10 @@ function Payment() {
               type="radio"
               className="container"
               label="Cash on delivery"
-              onClick={() => (setOpenCash(!openCash), setOpenCC(false))}
+              onClick={() => {
+                setOpenCash(!openCash);
+                setOpenCC(false);
+              }}
               checked={openCash}
             />
           </div>

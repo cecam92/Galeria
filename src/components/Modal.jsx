@@ -21,7 +21,10 @@ export default function LoginModal(props) {
           <li>
             <div
               className="cursor__pointer modalHeader__signIn"
-              onClick={() => (setShowLogIn(true), setShowSignUp(false))}
+              onClick={() => {
+                setShowSignUp(false);
+                setShowLogIn(true);
+              }}
               style={
                 showLogIn
                   ? {
@@ -39,7 +42,10 @@ export default function LoginModal(props) {
           <li>
             <div
               className="cursor__pointer modalHeader__signUp"
-              onClick={() => (setShowLogIn(false), setShowSignUp(true))}
+              onClick={() => {
+                setShowLogIn(false);
+                setShowSignUp(true);
+              }}
               style={
                 showSignUp
                   ? {

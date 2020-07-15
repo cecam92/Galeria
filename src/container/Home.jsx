@@ -1,9 +1,12 @@
 import React, { Fragment } from "react";
 import Layout from "../components/Layout";
+import HomeSlider from "../components/HomeSlider";
 function Home() {
   return (
     <Fragment>
-      <Layout></Layout>
+      <Layout>
+        <HomeSlider />
+      </Layout>
     </Fragment>
   );
 }
