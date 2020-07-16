@@ -4,7 +4,7 @@ import Logo from "../assets/logo.jsx";
 import SearchBar from "./SearchBar.jsx";
 import { Cart3, Person } from "react-bootstrap-icons";
 import Modal from "./Modal.jsx";
-
+//
 function NavLarge() {
   const [showLogin, setShowLogin] = useState(false);
   return (
