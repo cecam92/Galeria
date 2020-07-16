@@ -11,7 +11,7 @@ const SearchBar = () => {
         className="form-control"
         type="text"
         placeholder="Search for products"
-        style={{ paddingLeft: "30px" }}
+        style={{ paddingLeft: "30px", position: "relative" }}
       ></input>
     </Fragment>
   );

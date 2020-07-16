@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import Layout from "../components/Layout";
-import HomeSlider from "../components/HomeSlider";
+import CheckoutForm from "../components/CheckoutForm";
 function Home() {
   return (
     <Fragment>
       <Layout>
-        <HomeSlider />
+        <CheckoutForm />
       </Layout>
     </Fragment>
   );
