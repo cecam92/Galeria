@@ -2,9 +2,9 @@ import React from "react";
 
 function Footer() {
   return (
-    <div className="container-fluid text-center">
+    <footer className="container-fluid text-center">
       <p>Culimbo Inc</p>
-    </div>
+    </footer>
   );
 }
 
