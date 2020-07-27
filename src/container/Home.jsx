@@ -1,12 +1,9 @@
 import React, { Fragment } from "react";
-import Layout from "../components/Layout";
-import CheckoutForm from "../components/CheckoutForm";
+import SingleProduct from "./SingleProduct";
 function Home() {
   return (
     <Fragment>
-      <Layout>
-        <CheckoutForm />
-      </Layout>
+      <SingleProduct></SingleProduct>
     </Fragment>
   );
 }

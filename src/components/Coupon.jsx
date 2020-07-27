@@ -17,7 +17,7 @@ function Coupon() {
             >
               <Form.Control className=" col-12 col-lg-8 pb-2" type="text" />
 
-              <div className="col-12 col-lg-4 pt-2 px-0 px-md-2  pt-md-0">
+              <div className="col-12 col-lg-4 pt-2 px-0  pt-md-0">
                 <button className="form-control btn btn-outline-primary w-100">
                   Apply Code
                 </button>
