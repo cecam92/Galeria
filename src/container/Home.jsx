@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
-import SingleProduct from "./SingleProduct";
+import Layout from "../components/Layout";
 function Home() {
   return (
     <Fragment>
-      <SingleProduct></SingleProduct>
+      <Layout></Layout>
     </Fragment>
   );
 }
