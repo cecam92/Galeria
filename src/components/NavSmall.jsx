@@ -5,7 +5,7 @@ import Modal from "./Modal.jsx";
 import SearchBar from "./SearchBar.jsx";
 
 import "./styles/Header.css";
-import { Cart3, Person, Search, List } from "react-bootstrap-icons";
+import { Cart3, Person, Search } from "react-bootstrap-icons";
 function NavSmall() {
   const [showBar, setShowBar] = useState(false);
 
@@ -17,9 +17,6 @@ function NavSmall() {
           <LogoG className="header__image-logo" />
         </Link>
         <div className="header__menu-user col-5">
-          <Link>
-            <List className="header__image-list" />
-          </Link>
           <Link>
             <i>
               <Search

@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import Kami from "../assets/kami.png";
+import DarkImage from "../assets/darkImage.png";
 
 function ItemInOrder() {
   return (
@@ -7,7 +7,7 @@ function ItemInOrder() {
       <div className="d-flex flex-wrap justify-content-between align-items-center border-bottom py-2 px-3">
         <div className="itemProduct d-flex pt-2">
           <img
-            src={Kami}
+            src={DarkImage}
             className="item-image"
             style={{ width: "50px", height: "50px", paddingTop: "0px" }}
             alt="item"

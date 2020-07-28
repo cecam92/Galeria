@@ -121,7 +121,10 @@ h2 {
 .onPage {
   color: unquote($secondary + "8d");
 }
-.pepito {
-  width: 75%;
-  height: 400px;
+.homeSlider {
+  max-width: 1280px;
+}
+.carousel {
+  background-color: #2a3134;
+  border-radius: 10px;
 }

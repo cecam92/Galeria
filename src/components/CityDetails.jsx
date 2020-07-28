@@ -1,5 +1,5 @@
 import React from "react";
-import Kami from "../assets/kami.png";
+import DarkImage from "../assets/darkImage.png";
 import { Truck } from "react-bootstrap-icons";
 
 function CityDetails() {
@@ -8,7 +8,7 @@ function CityDetails() {
       <div className="d-flex flex-wrap justify-content-between align-items-center rounded-lg border py-2 px-3 mb-4">
         <div className="cityDetails d-flex">
           <img
-            src={Kami}
+            src={DarkImage}
             className="cityImage rounded-circle "
             alt="City Pic"
           />
