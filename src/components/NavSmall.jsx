@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import LogoG from "../assets/logoG.jsx";
 import Modal from "./Modal.jsx";
 import SearchBar from "./SearchBar.jsx";
+import { Cart3, Person, Search } from "react-bootstrap-icons";
 
 import "./styles/Header.css";
-import { Cart3, Person, Search } from "react-bootstrap-icons";
 function NavSmall() {
   const [showBar, setShowBar] = useState(false);
 

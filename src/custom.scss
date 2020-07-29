@@ -2,7 +2,7 @@
 
 $primary: #fe696a;
 $secondary: #373f50;
-$backgraundColor: #f2f5f9;
+$backgroundColor: #f2f5f9;
 
 $primaryOp: unquote($primary + "4d");
 
@@ -81,8 +81,9 @@ a {
 }
 main,
 .breadcrumb {
-  background-color: $backgraundColor;
+  background-color: $backgroundColor;
   padding: 10px 10px;
+  z-index: -1;
 }
 h1 {
   font-size: 32px;
@@ -93,6 +94,14 @@ h2 {
   font-size: 20px;
   font-weight: bold;
   color: $secondary;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+.h5,
+h6 {
+  font-size: 12px;
 }
 .cityImage {
   width: 50px;
@@ -127,4 +136,25 @@ h2 {
 .carousel {
   background-color: #2a3134;
   border-radius: 10px;
+}
+.home__productSlider {
+  background-color: $backgroundColor;
+  align-items: center;
+  overflow-x: auto;
+  margin: 15px;
+}
+.card {
+  border: none;
+  min-width: 210px;
+  max-width: 252px;
+  height: 270px;
+  margin: 10px;
+}
+.fachada {
+  color: rgba($color: #fff, $alpha: 0.1);
+  padding: 0;
+  width: 100%;
+  z-index: 10;
+  height: 35px;
+  cursor: pointer;
 }
