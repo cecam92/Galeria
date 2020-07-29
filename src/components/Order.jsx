@@ -3,11 +3,6 @@ import ItemInOrder from "./ItemInOrder";
 import Payment from "./Payment";
 
 function Order() {
-  const items = [];
-  const listItems = items.map((items) => (
-    <li key={items.toString()}>{items}</li>
-  ));
-
   return (
     <Fragment>
       <div className="container-fluid">
@@ -21,14 +16,15 @@ function Order() {
             className="ListOrder list-group-flush"
             style={{ overflowY: "auto", height: "370px" }}
           >
-            <ul>{listItems}</ul>
-            <ItemInOrder />
-            <ItemInOrder />
-            <ItemInOrder />
-            <ItemInOrder />
-            <ItemInOrder />
-            <ItemInOrder />
-            <ItemInOrder />
+            <ul>
+              <ItemInOrder />
+              <ItemInOrder />
+              <ItemInOrder />
+              <ItemInOrder />
+              <ItemInOrder />
+              <ItemInOrder />
+              <ItemInOrder />
+            </ul>
           </div>
 
           <div className="container-fluid py-4 ">
