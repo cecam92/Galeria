@@ -22,6 +22,9 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+.bg-light {
+  background-color: white !important;
+}
 
 .form-control {
   &:focus {
@@ -105,7 +108,7 @@ h5,
 .h5 {
   font-size: 14px;
 }
-.h5,
+.h6,
 h6 {
   font-size: 12px;
 }
@@ -143,17 +146,17 @@ h6 {
   background-color: #2a3134;
   border-radius: 10px;
 }
-.home__productSlider {
-  background-color: $backgroundColor;
+.home__productSlider,
+.home__ReviewSlider {
   align-items: center;
   overflow-x: auto;
   margin: 15px;
 }
 .card {
   border: none;
-  min-width: 210px;
-  max-width: 252px;
-  height: 270px;
+  min-width: 220px;
+  max-width: 290px;
+  height: 265px;
   margin: 10px;
 }
 .fachada {
@@ -163,4 +166,7 @@ h6 {
   z-index: 10;
   height: 30px;
   cursor: pointer;
+}
+.rating {
+  color: #fea569;
 }

@@ -1,6 +1,6 @@
 import React, { Fragment, useState } from "react";
 import Card from "react-bootstrap/Card";
-import DarkImage from "../assets/darkImage.png";
+import DarkImage from "../assets/defaultImage.png";
 import { Cart3 } from "react-bootstrap-icons";
 import Button from "react-bootstrap/Button";
 
