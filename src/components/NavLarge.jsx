@@ -19,7 +19,7 @@ function NavLarge() {
           <SearchBar />
         </div>
         <div className="header__menu-user col-3">
-          <i style={{ cursor: "pointer" }}>
+          <i>
             <Person
               className="header__image-user"
               onClick={() => setShowLogin(true)}

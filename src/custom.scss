@@ -3,7 +3,6 @@
 $primary: #fe696a;
 $secondary: #373f50;
 $backgroundColor: #f2f5f9;
-
 $primaryOp: unquote($primary + "4d");
 
 // Import Bootstrap and its default variables
@@ -35,6 +34,9 @@ ul {
 
 header {
   background-color: white;
+}
+i {
+  cursor: pointer;
 }
 
 .form-check-input {
@@ -91,7 +93,6 @@ a {
 main,
 .breadcrumb {
   background-color: $backgroundColor;
-  padding: 10px 10px;
   z-index: -1;
 }
 h1 {
@@ -169,4 +170,15 @@ h6 {
 }
 .rating {
   color: #fea569;
+}
+
+footer {
+  margin-top: 0px;
+  background-color: $secondary;
+  color: white;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
 }

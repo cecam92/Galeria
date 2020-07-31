@@ -17,24 +17,22 @@ function NavSmall() {
           <LogoG className="header__image-logo" />
         </Link>
         <div className="header__menu-user col-5">
-          <Link>
-            <i>
-              <Search
-                className="header__image-search"
-                onClick={() => setShowBar(!showBar)}
-              />
-            </i>
-          </Link>
-          <Link>
-            <i>
-              <Person
-                className="header__image-user "
-                onClick={() => setShowLogin(true)}
-              />
+          <i>
+            <Search
+              className="header__image-search pointer"
+              onClick={() => setShowBar(!showBar)}
+            />
+          </i>
 
-              <Modal show={showLogin} onHide={() => setShowLogin(false)} />
-            </i>
-          </Link>
+          <i>
+            <Person
+              className="header__image-user "
+              onClick={() => setShowLogin(true)}
+            />
+
+            <Modal show={showLogin} onHide={() => setShowLogin(false)} />
+          </i>
+
           <Link to="../checkout">
             <i className="header__icon-cart">
               <Cart3 className="header__image-cart" />
